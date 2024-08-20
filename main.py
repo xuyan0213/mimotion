@@ -555,8 +555,11 @@ if __name__ == "__main__":
     # Push Mode
     # print(sys.argv)
     try:
-        Pm = sys.argv[1]
-        pkey = sys.argv[2]
+        # Pm = sys.argv[1]
+        Pm = os.environ["PMODE"]
+        
+        # pkey = sys.argv[2]
+        pkey = os.environ["PKEY"]
 
         to_push = ToPush(pkey)
 
