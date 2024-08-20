@@ -557,7 +557,7 @@ if __name__ == "__main__":
     # print(sys.argv)
     try:
         # Pm = sys.argv[1]
-        Pm = os.environ["PMODE"]
+        Pm = 'pp'
         
         # pkey = sys.argv[2]
         pkey = os.environ["PKEY"]
