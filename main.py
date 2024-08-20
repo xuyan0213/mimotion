@@ -596,7 +596,7 @@ if __name__ == "__main__":
             print("推送方式: " + Pm)
             push[Pm]()
         except KeyError:
-            print('推送选项有误！')
+            print('推送选项有误！'+Pm)
             exit(0)
     else:
         print('用户名和密码数量不对')
