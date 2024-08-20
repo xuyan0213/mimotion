@@ -10,6 +10,7 @@ import re
 import json
 import sys
 import time
+import os
 from urllib.parse import quote
 
 import requests
