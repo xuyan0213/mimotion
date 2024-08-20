@@ -21,6 +21,12 @@ jobs:
         with:
           python-version: 3.8
       - name: 开始
+        env:
+          PMODE: ${{ secrets.PMODE }}
+          PKEY: ${{ secrets.PKEY }}
+          USER: ${{ secrets.USER }}
+          PWD: ${{ secrets.PWD }}
+          STEP: ${{ secrets.STEP }}
         run: |
           pip install requests
           pmode='${{ secrets.PMODE }}'
