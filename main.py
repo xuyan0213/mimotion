@@ -553,7 +553,7 @@ class ToPush:
 
 if __name__ == "__main__":
     # Push Mode
-    # print(sys.argv)
+     print(sys.argv)
     try:
         Pm = sys.argv[1]
         pkey = sys.argv[2]
@@ -593,6 +593,7 @@ if __name__ == "__main__":
             'off': to_push.no_push
         }
         try:
+            print("推送方式: " + Pm)
             push[Pm]()
         except KeyError:
             print('推送选项有误！')
